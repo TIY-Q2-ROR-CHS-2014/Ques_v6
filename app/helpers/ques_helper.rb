@@ -1,5 +1,5 @@
 module QuesHelper
-  def displayy_links(person)
+  def display_links(person)
     if person.workflow_state == 'new'
       link_to "Help This Student", 'javascript:void(0)', class: "help_this_student change_workflow", que_url: help_student_que_path(person)
     elsif person.workflow_state == 'in_progress'
@@ -11,3 +11,4 @@ module QuesHelper
       link_to "Re Help", 'javascript:void(0);', class: "re_help change_workflow", que_url: help_student_que_path(person)
     end
   end
+end

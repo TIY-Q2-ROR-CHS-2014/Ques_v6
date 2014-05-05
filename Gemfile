@@ -47,6 +47,7 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'workflow'
+gem 'haml'
 gem 'paperclip'
 gem 'letter_opener', group: :development
-gem 'devise'

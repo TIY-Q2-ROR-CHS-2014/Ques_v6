@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
   root 'home#index'
   # Go to home controller
     # Go to index action/method
@@ -7,7 +6,6 @@ Rails.application.routes.draw do
   resources :ques do
     collection do
       get :search_names
-      post :help_me
     end
 
     member do

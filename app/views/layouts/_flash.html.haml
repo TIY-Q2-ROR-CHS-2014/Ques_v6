@@ -1,8 +1,4 @@
 - if flash[:notice]
   .notice= flash[:notice]
-
-- if flash[:error]
+- elsif flash[:error]
   .error= flash[:error]
-
-- if flash[:alert]
-  .alert= flash[:alert]
